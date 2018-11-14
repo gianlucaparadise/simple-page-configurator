@@ -220,6 +220,7 @@ function loadPoiList(poilist) {
 	poilist.empty();
 	currentPage.pois.forEach(function (poi) {
 		var div = $("<div />").load("../templates/poilistitem.template.html", () => {
+			// fixme: this is called too many times
 			var poiitem = $(div).children().first();
 			$(".poiprice", poiitem).html(poi.price + " &euro;");
 			$(".poititle", poiitem).text(poi.name);

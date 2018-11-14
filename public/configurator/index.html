@@ -1,7 +1,7 @@
 <html>
 
 <head>
-	<title>Yo</title>
+	<title>Simple Page Builder: Configurator</title>
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
@@ -28,8 +28,12 @@
 				<button class="myButton" id="choosePageButton" title="Load this page">Choose Page</button>
 			</div>
 			<div style="width: 50%; float: right;">
-				<button class="myButton" id="savePageButton" title="Save the configuration for this page" disabled>Save Page</button>
-				<button class="myButton" id="refreshButton" title="Refresh the image lists or the page list" disabled>Refresh</button>
+				<button class="myButton" id="savePageButton" title="Save the configuration for this page (the server doesn't have a DB and nothing is saved)"
+				 disabled>Save Page</button>
+				<button class="myButton" id="refreshButton" title="Refresh the image lists or the page list (the server doesn't have a DB and nothing is saved)"
+				 disabled>Refresh</button>
+				<button class="myButton" id="viewButton" title="View in read only mode (the server doesn't have a DB and nothing is saved)"
+				 disabled>View</button>
 			</div>
 		</div>
 

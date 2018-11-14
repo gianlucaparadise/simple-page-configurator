@@ -18,6 +18,12 @@ $(function () {
 		}, true);
 	});
 
+	var viewButton = $("#viewButton").click((e) => {
+		var selected = $("option:selected", pageSelector);
+		var pageId = selected.data("pageId");
+		window.open("/view/index.html?i=" + pageId, '_blank');
+	});
+
 	$("#choosePageButton").click(() => {
 		var selected = $("option:selected", pageSelector);
 		var pageId = selected.val();
@@ -28,6 +34,7 @@ $(function () {
 			}, page => {
 				savePageButton.removeProp("disabled");
 				refreshButton.removeProp("disabled");
+				viewButton.removeProp("disabled");
 			});
 		});
 	});
@@ -39,7 +46,8 @@ function populatePageSelector(pageSelector, pages) {
 	pages.forEach(function (page) {
 		var option = $("<option />")
 			.val(page.uniqueId)
-			.text(page.name);
+			.text(page.name)
+			.data("pageId", page.id);
 
 		pageSelector.append(option);
 	}, this);
