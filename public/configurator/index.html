@@ -1,0 +1,58 @@
+<html>
+
+<head>
+	<title>Yo</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/pageView.css">
+	<link rel="stylesheet" type="text/css" href="css/pageConfigurator.css">
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<script src="js/logger.js"></script>
+	<script src="../js/PageLoader.js"></script>
+	<script src="js/PageConfigurator.js"></script>
+	<script src="js/pageChooser.js"></script>
+	<script src="js/pageComposer.js"></script>
+</head>
+
+<body>
+	<div id="mainContainer" class="simpleShadow">
+		<div id="header">
+			<div style="width: 50%; float: left;">
+				<select class="myButton" name="pageSelector" id="pageSelector">
+					<option value="default" disabled selected>Select Page</option>
+				</select>
+				<button class="myButton" id="choosePageButton" title="Load this page">Choose Page</button>
+			</div>
+			<div style="width: 50%; float: right;">
+				<button class="myButton" id="savePageButton" title="Save the configuration for this page" disabled>Save Page</button>
+				<button class="myButton" id="refreshButton" title="Refresh the image lists or the page list" disabled>Refresh</button>
+			</div>
+		</div>
+
+		<div id="logContainer"></div>
+
+		<div id="body" style="display: none;">
+			<div id="pageTitle" class="bigTitle">Page Title</div>
+
+			<div id="templatePreview">
+				<div class="title">Template Preview</div>
+				<div style="text-align: center">
+					<select class="myButton" name="templateSelector" id="templateSelector" size="2">
+					</select>
+				</div>
+				<div class="draggable"></div>
+			</div>
+
+			<div id="pagePreview">
+				<div class="title">Page Preview</div>
+				<div id="sortable"></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

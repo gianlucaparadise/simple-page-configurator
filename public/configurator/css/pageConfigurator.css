@@ -1,0 +1,115 @@
+#header {
+	padding: 10px;
+	text-align: center;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#logContainer {
+	width: 100%;
+	text-align: center;
+	font-style: italic;
+}
+
+#templateSelector {
+	min-width: 150px;
+	min-height: 50px;
+}
+
+#templatePreview {
+    box-sizing: border-box;
+    padding: 10px 0px;
+    background-color: lightgoldenrodyellow;
+}
+
+.draggable, .draggable [contenteditable="true"] {
+	cursor: move !important;
+}
+
+#sortable > div {
+	cursor: move;
+    -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
+}
+
+#sortable > div:hover {
+	background-color: #EEEEEE;
+}
+
+/*Image picker style*/
+.imageeditable {
+     border: 1px solid black;
+}
+
+.plus {
+	position: absolute;
+	top: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+}
+
+.plus::before {
+	content: "+";
+	color: #FFFFFF;
+}
+
+.rotated {
+    -webkit-transform: rotate(45deg);  /* Chrome, Safari 3.1+ */
+    -moz-transform: rotate(45deg);  /* Firefox 3.5-15 */
+    -ms-transform: rotate(45deg);  /* IE 9 */
+    -o-transform: rotate(45deg);  /* Opera 10.50-12.00 */
+    transform: rotate(45deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+ul.imagelist {
+	position: absolute;
+	top: 101%;
+    margin: 0px auto;
+    left: 0px;
+    right: 0px;
+    list-style-type: none;
+    padding: 0;
+	overflow-x: hidden;
+	background-color: white;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 7px 2px rgba(21,22,22,.23);
+    -moz-box-shadow: 0 2px 7px 2px rgba(21,22,22,.23);
+    box-shadow: 0 2px 7px 2px rgba(21,22,22,.23);
+	cursor: pointer !important;
+	display: none;
+	z-index: 1000;
+    min-width: 150px;
+}
+
+ul.imagelist > li {
+	text-align: left;
+	padding: 5px 10px;
+    -webkit-transition: background-color 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 0.2s;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+ul.imagelist > li:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+/*Delete button styles*/
+.delete {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    margin: 5px;
+}
+
+.delete::before {
+	content: "\d7";
+	color: #FFFFFF;
+}

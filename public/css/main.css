@@ -1,0 +1,47 @@
+#mainContainer {
+	width: 100%;
+	height: 100%;
+	display: table;
+	margin: auto;
+	/*border: 1px solid black;*/
+    -webkit-box-shadow: 0px 5px 15px 9px rgba(21,22,22,.23);
+    -moz-box-shadow: 0px 5px 15px 9px rgba(21,22,22,.23);
+    box-shadow: 0px 5px 15px 9px rgba(21,22,22,.23);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (min-width: 1025px) {
+	/*When not on mobile: */
+    #mainContainer {
+		max-width: 600px;
+    }
+}
+
+.myButton {
+	margin: 10px auto;
+}
+
+.title {
+	text-align: center;
+	padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.bigTitle {
+	text-align: center;
+	padding: 10px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#pagePreview {
+	height: 100%;
+    box-sizing: border-box;
+    margin: 10px 0px;
+}
+
+#sortable {
+	height: 100%;
+        min-height: 200px;
+}
