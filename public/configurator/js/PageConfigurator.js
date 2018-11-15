@@ -122,6 +122,8 @@ function buildImageList(imageeditable, imagelist, plus) {
 function savePage(id, lang, modules) {
 	Logger.writeLog("Saving current page...");
 	var request = {
+		"id": id,
+		"lang": lang,
 		"modules": modules
 	};
 
