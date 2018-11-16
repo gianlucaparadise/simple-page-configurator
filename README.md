@@ -10,14 +10,14 @@ This is a POC of an interface used to build web pages. This is meant to cooperat
 
 ![Example](images/usage_example.gif)
 
-## Templates
+## Templates
 
 To add a new template, you need to:
 
 * create an html file under [templates folder](public/templates)
 * add an entry in the [modules configuration array](public/js/PageLoader.js#3) of PageLoader.js
 
-### Template files
+### Template files
 
 The template file has some constraints:
 
@@ -52,7 +52,7 @@ The configuration array is in this format:
 * `moduleTitle`: title of the module (will be displayed in the template select list)
 * `templatePath`: path of the template
 
-## Page Saving
+## Page Saving
 
 When the page is saved, the Page Preview is converted in json. Each template becomes an entry of the `modules` array using this format:
 
@@ -83,7 +83,7 @@ When the page is saved, the Page Preview is converted in json. Each template bec
 * *contenteditable elements*: all the template elements having the `contenteditable` attribute are converted in key value pairs where the key is the `id` attribute and the value is the text node
 * *.imageeditable elements*: all the template elements having the `imageeditable ` class are converted in key value pairs where the key is the `id` attribute and the value is the url of the selected image
 
-## CMS
+## CMS
 
 The CMS is in charge of page node creation, image upload and REST APIs.
 
@@ -132,7 +132,7 @@ The backend should expose a REST API that returns the list of pages is in this f
 }
 ```
 
-### SavePage
+### SavePage
 
 `PUT`: `/api/configurator/page`
 
@@ -167,7 +167,7 @@ The backend should expose a REST API that saves the state of the template module
 
 N.B. The array in `modules` can be converted and saved as a string. The CMS doesn't need to interpret this field.
 
-### Fields
+### Fields
 
 * `id`: string id of the page
 * `lang`: string language code of the page
