@@ -70,8 +70,8 @@ var stubResponse =
 			"modules": [
 				{
 					"moduleId": "main_title",
-					"title": "An italian genius",
-					"subtitle": "An italian genius in every artistic field",
+					"title": "An Italian genius",
+					"subtitle": "An Italian genius in every artistic field",
 					"image": "https://upload.wikimedia.org/wikipedia/commons/5/54/LEONARDO_DA_VINCI.jpg"
 				},
 				{
