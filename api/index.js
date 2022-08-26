@@ -1,18 +1,16 @@
-var express = require('express');
-var router = express.Router();
+const app = require('express')();
 
-/* GET page data. */
-router.get('/page', function (req, res, next) {
+app.get('/api/page', function (_, res) {
 	res.json(stubResponse);
 });
 
-router.put('/configurator/page', function (req, res, next) {
+app.put('/api/configurator/page', function (req, res) {
 	console.log(req.body);
 	// todo: save to DB
 	res.json({ text: "saved" });
 });
 
-module.exports = router;
+module.exports = app;
 
 var stubResponse =
 {

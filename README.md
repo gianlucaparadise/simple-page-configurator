@@ -4,7 +4,7 @@ This is a POC of an interface used to build web pages. This is meant to cooperat
 
 *Tested only in Chrome.*
 
-**Demo:** https://simple-page-configurator.herokuapp.com/
+**Demo:** https://simple-page-configurator.vercel.app/
 
 ## Interface Usage
 

@@ -1,0 +1,9 @@
+{
+    "redirects":[
+        {
+           "source":"/",
+           "destination":"/configurator/index.html"
+        }
+     ],
+    "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
+}
